@@ -1,2 +1,2 @@
 # GrausCF
-✔Programa que converte Celsius em Fireraid 
+✔Programa que converte Celsius em Fahrenheit 
