@@ -6,22 +6,24 @@ namespace GrausCF
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
+            double c, f;
+
             Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.Write("Digite a medida em Celsius: ");
+            Console.WriteLine("\n==== Celsius para Fahrenheit ====\n");
             Console.ResetColor();
-            string celsiusDigitado = Console.ReadLine();
-            double celsius = Convert.ToDouble(celsiusDigitado);
-            double fireraid = celsius * 1.8 + 32;
-            Console.WriteLine();
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.Write($"{celsius}°C ");
+
+            Console.WriteLine("Digite a temperatura em Celsius\npara converter em Fahrenheit.\n");
+
+            Console.Write("Temperatura em Celsius: ");
+            c = Convert.ToDouble(Console.ReadLine());
+
+            f = (c * 1.8) + 32;    
+
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
+            Console.WriteLine("\n=== Conversão ===\n");
             Console.ResetColor();
-            Console.Write("equivalem a ");
-            Console.ForegroundColor = ConsoleColor.DarkBlue;
-            Console.WriteLine($"{fireraid}°F");
-            Console.ResetColor();
-            Console.WriteLine();
+
+            Console.WriteLine($"{c}°C equivalem a {f}°F.\n");
         }
     }
 }
